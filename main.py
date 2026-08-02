@@ -11,3 +11,8 @@ def read_root():
 @app.get("/health")
 def health_check():
     return {"status": "ok"}
+
+
+@app.get("/version")
+def version():
+    return {"version": "poll-ceiling-live-check"}
