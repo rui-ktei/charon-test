@@ -18,5 +18,5 @@ def health_check():
 
 @app.get("/items")
 def list_items(limit: int = DEFAULT_PAGE_SIZE):
-    page_size = max(limit, MAX_PAGE_SIZE)
+    page_size = min(limit, MAX_PAGE_SIZE)
     return {"items": [], "limit": page_size}
