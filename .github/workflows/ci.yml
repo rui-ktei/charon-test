@@ -19,12 +19,4 @@ jobs:
       - uses: actions/checkout@v4
       - uses: astral-sh/setup-uv@v9.0.0
       - name: Smoke test the endpoints
-        run: |
-          uv run --with httpx python - <<'PY'
-          from fastapi.testclient import TestClient
-          from main import app
-
-          client = TestClient(app)
-          assert client.get("/").json() == {"message": "Hello, World!"}
-          assert client.get("/health").json() == {"status": "ok"}
-          PY
+        run: uv run --with httpx python smoke.py
