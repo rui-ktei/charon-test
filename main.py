@@ -30,5 +30,5 @@ def list_items(limit: int = DEFAULT_PAGE_SIZE, offset: int = 0):
 
 @app.get("/items/search")
 def search_items(query: str = "", limit: int = DEFAULT_PAGE_SIZE):
-    page_size = min(limit, 50)
+    page_size = min(limit, MAX_PAGE_SIZE)
     return {"items": [], "query": query, "limit": page_size}
