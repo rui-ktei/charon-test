@@ -2,7 +2,7 @@ gate:
     command: sh
     args:
         - -c
-        - echo the edited declaration ran >>/tmp/edited-gate-ran; exit 1
+        - echo 'smoke.py:12: the default branch does not build'; exit 1
     pass_env:
         - PATH
         - HOME
