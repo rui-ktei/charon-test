@@ -1,8 +1,7 @@
 gate:
-    command: sh
+    command: make
     args:
-        - -c
-        - "echo 'smoke.py:12: the default branch does not build'; exit 1"
+        - test
     pass_env:
         - PATH
         - HOME
