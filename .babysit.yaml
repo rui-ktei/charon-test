@@ -1,0 +1,7 @@
+gate:
+    command: make
+    args:
+        - test
+    pass_env:
+        - PATH
+        - HOME
