@@ -16,6 +16,11 @@ def health_check():
     return {"status": "ok"}
 
 
+@app.get("/items/count")
+def count_items(per_page: int = DEFAULT_PAGE_SIZE):
+    return {"count": 0, "per_page": per_page}
+
+
 @app.get("/items")
 def list_items(limit: int = DEFAULT_PAGE_SIZE, offset: int = 0):
     page_size = min(limit, MAX_PAGE_SIZE)
