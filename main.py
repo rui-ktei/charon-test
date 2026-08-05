@@ -40,3 +40,9 @@ def search_items(query: str = "", limit: int = DEFAULT_PAGE_SIZE):
 def page_items(page: int = 1, size: int = DEFAULT_PAGE_SIZE):
     page_size = min(size, MAX_PAGE_SIZE)
     return {"items": [], "page": page, "size": page_size}
+
+
+@app.get("/items/window")
+def window_items(start: int = 0, size: int = DEFAULT_PAGE_SIZE):
+    page_size = min(size, MAX_PAGE_SIZE)
+    return {"items": [], "start": start, "size": page_size}
