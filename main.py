@@ -5,7 +5,7 @@ app = FastAPI()
 DEFAULT_PAGE_SIZE = 10
 MAX_PAGE_SIZE = 50
 
-HEALTH_STATUS = "ok"
+HEALTH_STATUS = "healthy"
 
 
 @app.get("/")

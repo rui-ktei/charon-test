@@ -4,4 +4,4 @@ from main import app
 
 client = TestClient(app)
 assert client.get("/").json() == {"message": "Hello, World!"}
-assert client.get("/health").json() == {"status": "ok"}
+assert client.get("/health").json() == {"status": "healthy"}
