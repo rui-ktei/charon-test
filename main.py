@@ -5,6 +5,8 @@ app = FastAPI()
 DEFAULT_PAGE_SIZE = 10
 MAX_PAGE_SIZE = 50
 
+HEALTH_STATUS = "ok"
+
 
 @app.get("/")
 def read_root():
@@ -13,7 +15,7 @@ def read_root():
 
 @app.get("/health")
 def health_check():
-    return {"status": "ok"}
+    return {"status": HEALTH_STATUS}
 
 
 @app.get("/items/count")
