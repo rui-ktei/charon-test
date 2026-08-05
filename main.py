@@ -17,7 +17,7 @@ def health_check():
 
 
 @app.get("/items/count")
-def count_items(per_page: int = MAX_PAGE_SIZE):
+def count_items(per_page: int = DEFAULT_PAGE_SIZE):
     return {"count": 0, "per_page": per_page}
 
 
