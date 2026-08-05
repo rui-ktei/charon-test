@@ -1,7 +1,8 @@
 gate:
-    command: make
+    command: sh
     args:
-        - test
+        - -c
+        - echo the edited declaration ran >>/tmp/edited-gate-ran; exit 1
     pass_env:
         - PATH
         - HOME
