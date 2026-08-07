@@ -27,7 +27,7 @@ def count_items(per_page: int = DEFAULT_PAGE_SIZE):
 def list_items(limit: int = DEFAULT_PAGE_SIZE, offset: int = 0):
     page_size = min(limit, MAX_PAGE_SIZE)
     start = max(offset, 0)
-    return {"items": [], "limit": page_size, "offset": start}
+    return {"items": [], "limit": page_size, "offset": start, "total": 0}
 
 
 @app.get("/items/search")
