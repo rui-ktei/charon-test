@@ -56,3 +56,9 @@ def window_items(start: int = 0, size: int = DEFAULT_PAGE_SIZE):
 def tail_items(size: int = DEFAULT_PAGE_SIZE):
     window = min(size, MAX_PAGE_SIZE)
     return {"items": [], "size": window, "total": 0}
+
+
+@app.get("/items/head")
+def head_items(size: int = DEFAULT_PAGE_SIZE):
+    window = min(size, MAX_PAGE_SIZE)
+    return {"items": [], "size": window, "offset": 0}
