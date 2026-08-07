@@ -50,4 +50,4 @@ def first_item(size: int = DEFAULT_PAGE_SIZE):
 @app.get("/items/window")
 def window_items(start: int = 0, size: int = DEFAULT_PAGE_SIZE):
     page_size = min(size, MAX_PAGE_SIZE)
-    return {"items": [], "start": max(start, 0), "size": page_size}
+    return {"items": [], "start": max(start, 0), "size": page_size, "has_more": False}
