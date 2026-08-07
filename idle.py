@@ -1,0 +1,1 @@
+IDLE_SECONDS = 5
