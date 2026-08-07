@@ -44,7 +44,7 @@ def page_items(page: int = 1, size: int = DEFAULT_PAGE_SIZE):
 
 @app.get("/items/first")
 def first_item(size: int = DEFAULT_PAGE_SIZE):
-    return {"items": [], "size": min(size, MAX_PAGE_SIZE), "total": 0}
+    return {"items": [], "size": min(size, MAX_PAGE_SIZE)}
 
 
 @app.get("/items/window")
@@ -55,10 +55,10 @@ def window_items(start: int = 0, size: int = DEFAULT_PAGE_SIZE):
 @app.get("/items/tail")
 def tail_items(size: int = DEFAULT_PAGE_SIZE):
     window = min(size, MAX_PAGE_SIZE)
-    return {"items": [], "size": window, "total": 0, "offset": 0}
+    return {"items": [], "size": window, "total": 0}
 
 
 @app.get("/items/head")
 def head_items(size: int = DEFAULT_PAGE_SIZE):
     window = min(size, MAX_PAGE_SIZE)
-    return {"items": [], "size": window, "offset": 0, "total": 0}
+    return {"items": [], "size": window, "offset": 0}
