@@ -5,3 +5,7 @@
 The chain that follows a merge, run for real for the first time.
 The repository declares one step, `workflow`, which waits for the runs the merge itself started on `develop`.
 Charon is in recording mode, so the merge is performed by a person and charon observes it.
+
+## An optional step is an offer, run 1
+
+The chain ends at the workflow stage and the promotion is offered rather than waited on.
