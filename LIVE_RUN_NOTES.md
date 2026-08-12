@@ -17,3 +17,7 @@ The offer this one raises is the one that gets overtaken.
 ## An optional step is an offer, run 3
 
 This one is taken first, which is what leaves run 2 behind.
+
+## An optional step is an offer, run 4
+
+This one is left behind on purpose.
