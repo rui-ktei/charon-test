@@ -1,1 +1,7 @@
 2026-08-11T04:58:54Z - live run for a-branch-goes-whoever-merged-it
+
+## extension-stages: a chain of one workflow stage
+
+The chain that follows a merge, run for real for the first time.
+The repository declares one step, `workflow`, which waits for the runs the merge itself started on `develop`.
+Charon is in recording mode, so the merge is performed by a person and charon observes it.
