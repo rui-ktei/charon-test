@@ -25,3 +25,7 @@ This one is left behind on purpose.
 ## An optional step is an offer, run 5
 
 This one goes further, so run 4 must be refused.
+
+## An optional step is an offer, run 6
+
+The hand-over chooses the step, so no offer is ever raised.
