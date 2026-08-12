@@ -13,3 +13,7 @@ The chain ends at the workflow stage and the promotion is offered rather than wa
 ## An optional step is an offer, run 2
 
 The offer this one raises is the one that gets overtaken.
+
+## An optional step is an offer, run 3
+
+This one is taken first, which is what leaves run 2 behind.
