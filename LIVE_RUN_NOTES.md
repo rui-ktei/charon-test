@@ -9,3 +9,7 @@ Charon is in recording mode, so the merge is performed by a person and charon ob
 ## An optional step is an offer, run 1
 
 The chain ends at the workflow stage and the promotion is offered rather than waited on.
+
+## An optional step is an offer, run 2
+
+The offer this one raises is the one that gets overtaken.
