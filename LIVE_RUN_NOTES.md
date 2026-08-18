@@ -44,3 +44,5 @@ Fourth live run: the subject moves.
 
 The release server this run reads is a stand-in serving what the real one
 answers, on loopback, from a file. Nothing outward reaches anything.
+
+The containment question is answered from a real mirror of a real repository.
