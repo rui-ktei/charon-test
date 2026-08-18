@@ -39,3 +39,8 @@ Second live run: a commit that does not exist yet.
 A commit nobody has pushed yet.
 Third live run: an answer about other commits.
 Fourth live run: the subject moves.
+
+## A run with no release server (2026-08-18)
+
+The release server this run reads is a stand-in serving what the real one
+answers, on loopback, from a file. Nothing outward reaches anything.
