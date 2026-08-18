@@ -58,3 +58,5 @@ Live run: a step somebody chose under confirmation
 Live run: a target a deny pattern catches
 
 A change that is later overtaken
+
+A change that overtakes the first
