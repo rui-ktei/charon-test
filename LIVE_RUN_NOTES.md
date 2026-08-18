@@ -50,3 +50,5 @@ The containment question is answered from a real mirror of a real repository.
 A later commit on develop, carrying whatever came before it.
 
 A write recorded and then answered with an error is the case the receipt exists for.
+
+The receipt read first is what makes a lost answer safe.
