@@ -48,3 +48,5 @@ answers, on loopback, from a file. Nothing outward reaches anything.
 The containment question is answered from a real mirror of a real repository.
 
 A later commit on develop, carrying whatever came before it.
+
+A write recorded and then answered with an error is the case the receipt exists for.
