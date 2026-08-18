@@ -60,3 +60,5 @@ Live run: a target a deny pattern catches
 A change that is later overtaken
 
 A change that overtakes the first
+
+A change the source never carries
