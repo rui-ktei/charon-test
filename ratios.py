@@ -4,4 +4,6 @@ def success_rate(succeeded, attempted):
 
 def midpoint(values):
     ordered = sorted(values)
-    return ordered[len(ordered) / 2]
+    if not ordered:
+        raise ValueError("midpoint() requires a non-empty sequence of values")
+    return ordered[len(ordered) // 2]
