@@ -7,7 +7,7 @@ def spent(used, limit=QUOTA_LIMIT):
 
 
 def exhausted(used, limit=QUOTA_LIMIT):
-    """Report whether the quota still has room left in it."""
+    """Report whether the quota has been used up."""
     return used >= limit
 
 
