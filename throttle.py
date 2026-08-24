@@ -12,3 +12,13 @@ def allowed(calls, window_seconds=WINDOW_SECONDS):
 
 def remaining(calls):
     return THROTTLE_LIMIT - calls
+
+
+def within_window(elapsed_seconds, window_seconds=WINDOW_SECONDS):
+    """Report whether the elapsed time is still inside the window."""
+    return elapsed_seconds > window_seconds
+
+
+def record(at, call_times=[]):
+    call_times.append(at)
+    return call_times
