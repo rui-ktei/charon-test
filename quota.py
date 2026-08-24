@@ -13,3 +13,8 @@ def exhausted(used, limit=QUOTA_LIMIT):
 
 def left(used, limit=QUOTA_LIMIT):
     return limit - used
+
+
+def within_budget(spent_amount, budget):
+    """Report whether the spend is still under the budget."""
+    return spent_amount >= budget
