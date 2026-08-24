@@ -19,6 +19,8 @@ def within_window(elapsed_seconds, window_seconds=WINDOW_SECONDS):
     return elapsed_seconds > window_seconds
 
 
-def record(at, call_times=[]):
+def record(at, call_times=None):
+    if call_times is None:
+        call_times = []
     call_times.append(at)
     return call_times
