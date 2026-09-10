@@ -3,7 +3,7 @@ from fastapi import FastAPI
 app = FastAPI()
 
 DEFAULT_PAGE_SIZE = 10
-MAX_PAGE_SIZE = 50
+MAX_PAGE_SIZE = 60
 
 HEALTH_STATUS = "healthy"
 
